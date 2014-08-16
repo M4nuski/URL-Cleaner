@@ -1,4 +1,4 @@
-//YouTube URL Cleaner v1.0
+//URL Cleaner for YouTube™ v1.0
 //Background Script
 
 var CleaningEnabled = false;

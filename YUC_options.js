@@ -1,4 +1,4 @@
-//YouTube URL Cleaner v1.0
+//URL Cleaner for YouTube™ v1.0
 //Options Script
 
 var InfoText = document.getElementById("InfoText");
@@ -10,7 +10,7 @@ EnabledCheckBox.addEventListener("click", changeOptions);
 function changeText() {
 	if (EnabledCheckBox.checked) {
 		InfoText.innerHTML = "Playlists will not be loaded.";
-	} else InfoText.innerHTML = "YouTube works as usual.";
+	} else InfoText.innerHTML = "YouTube™ works as usual.";
 };
 
 function loadOptions( value ) {

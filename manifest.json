@@ -1,9 +1,9 @@
-{
+﻿{
   "manifest_version": 2,
 
-  "name": "YouTube URL Cleaner",
-  "description": "Remove unwanted '&list=' from YouTube video links so that only the selected video plays and not the whole wrong-order-default-playlist.",
-  "version": "1.0",
+  "name": "URL Cleaner",
+  "description": "Remove unwanted '&list=...' from YouTube™ video links so that only the selected video plays and not the whole default playlist.",
+  "version": "1.1",
   
   "icons": {"16": "YUC_icon16.png",
 			"48": "YUC_icon48.png",
