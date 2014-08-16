@@ -1,4 +1,9 @@
-      body {
-        min-width: 357px;
-        overflow-x: hidden;
-      }
+ /*YouTube URL Cleaner v1.0*/
+ /*Options StyleSheet*/
+
+body {
+    min-width: 357px;
+    overflow-x: hidden;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: center;
+}

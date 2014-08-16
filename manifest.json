@@ -2,15 +2,22 @@
   "manifest_version": 2,
 
   "name": "YouTube URL Cleaner",
-  "description": "This extension remove unwanted 'LIST?' from YouTube video links.",
+  "description": "Remove unwanted '&list=' from YouTube video links so that only the selected video plays and not the whole wrong-order-default-playlist.",
   "version": "1.0",
-
+  
+  "icons": {"16": "YUC_icon16.png",
+			"48": "YUC_icon48.png",
+			"128": "YUC_icon128.png" },
+		  
   "permissions": [
-    "webRequest", "webRequestBlocking", "*://www.youtube.com/*"
+    "storage", 
+	"webRequest", 
+	"webRequestBlocking",
+	"*://www.youtube.com/*"
   ],
   
   "browser_action": {
-    "default_icon": "YUC_icon.png",
+    "default_icon": "YUC_icon128.png",
     "default_popup": "YUC_options.html"	
   }, 
   

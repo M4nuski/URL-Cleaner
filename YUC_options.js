@@ -1,7 +1,24 @@
-// Test Script for Chrome Extension
+//YouTube URL Cleaner v1.0
+//Options Script
 
-var taburl = "[Default JS String]";
-var Test2Div = document.getElementById("Test2");
+var InfoText = document.getElementById("InfoText");
+var EnabledCheckBox = document.getElementById("EnabledCheckBox");
 
-console.log("Option Popup Loaded");
+chrome.storage.sync.get( 'YUC_Enabled' , loadOptions);
+EnabledCheckBox.addEventListener("click", changeOptions);
 
+function changeText() {
+	if (EnabledCheckBox.checked) {
+		InfoText.innerHTML = "Playlists will not be loaded.";
+	} else InfoText.innerHTML = "YouTube works as usual.";
+};
+
+function loadOptions( value ) {
+	EnabledCheckBox.checked = value.YUC_Enabled;
+	changeText();
+};
+
+function changeOptions(){
+	changeText();	
+	chrome.storage.sync.set({'YUC_Enabled': EnabledCheckBox.checked}, function() {} );
+};
