@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "YouTube URL Cleaner",
+  "description": "This extension remove unwanted 'LIST?' from YouTube video links.",
+  "version": "1.0",
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "*://www.youtube.com/*"
+  ],
+  
+  "browser_action": {
+    "default_icon": "YUC_icon.png",
+    "default_popup": "YUC_options.html"	
+  }, 
+  
+    "background": {
+    "scripts": ["YUC_script.js"]
+  }
+}
